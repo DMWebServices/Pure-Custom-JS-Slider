@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->    
+    <!-- FA -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Custom CSS -->    
+    <link rel="stylesheet" href="style.css">
+
+    <title>JS Slider</title>
+</head>
+<body>
+    
+    <!-- Carousel Wrapper -->
+    <div class="carousel__wrapper">
+        <div class="carousel__inner-container">
+        
+        <!-- Carousel Btn Prev --> 
+        <button class="carousel__control-btn" id="carousel__btn--prev"><i class="fa-solid fa-chevron-left"></i></button>
+        
+        <!-- Carousel Slider Track -->
+        <div class="carousel__track-container" id="">
+            <ul class="carousel__track">
+                <li class="slide img--overlay active"><img src="https://picsum.photos/id/1/500/400" /></li>
+                <li class="slide img--overlay"><img src="https://picsum.photos/id/2/500/400"/></li>
+                <li class="slide img--overlay"><img src="https://picsum.photos/id/3/500/400"/></li>
+            </ul>  
+        </div>
+        
+        <!-- Carousel Btn Next--> 
+        <button class="carousel__control-btn" id="carousel__btn--next"><i class="icon fa-solid fa-chevron-right"></i></button>
+        
+        <!-- Carousel Dots -->
+        <div class="carousel_dots">
+            <button class="carousel__dot active"></button>
+            <button class="carousel__dot"></button>
+            <button class="carousel__dot"></button>
+        </div>  
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>

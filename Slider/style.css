@@ -1,0 +1,25 @@
+/** Global Overrides **/
+*, body { padding: 0; margin: 0; border: 0; }
+li { list-style: none; }
+img, div { border-radius: 2px; object-fit: cover; }
+
+/** Slider Container Styles**/
+.carousel__wrapper { display: flex; justify-content: center; align-items: center; height: 100vh; width: 100%; background-color: #606c38; }
+.carousel__inner-container {  overflow: hidden; position: relative; width: 500px; height: 400px; background-color: #fefae0; }
+.carousel__track { transition: transform 0.5s ease-in-out; }
+.img--overlay { background-color: #000; }
+
+/** Slide Styles **/
+.slide { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+/** Carousel Control Btn **/
+.carousel__control-btn { opacity: 0.4; color: #fff; background-color: transparent; font-size: 38px; z-index: 1000; }
+.carousel__control-btn:hover { opacity: 1; transition: 0.8s; }
+#carousel__btn--prev { position: absolute; top: 50%; left: 10px; cursor: pointer; }
+#carousel__btn--next { position: absolute; top: 50%; right: 10px; cursor: pointer; }
+
+/** Btn Dots **/
+.carousel_dots { display: flex; height: 370px; justify-content: center; align-items: flex-end; }
+.carousel__dot { cursor: pointer; opacity: 0.4; background-color: #fff; width: 12px; height: 12px; border-radius: 50%; z-index: 1000; margin: 0 0.3rem; }
+.carousel__dot:hover { opacity: 1; transition: 0.8s; }
+.carousel__dot.active { width: 14px; height: 14px; opacity: 0.8; }
